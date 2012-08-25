@@ -1,0 +1,3 @@
+gears-stylus==0.1.1
+
+-e git+https://github.com/gears/gears.git#egg=Gears
