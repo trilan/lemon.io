@@ -294,9 +294,10 @@ td { vertical-align: top; }
 
 body {
   background-color: #9e4223;
+  background-image: url("../images/lemon.png");
 }
 .head {
-  height: 780px;
+  height: 740px;
 }
 .head .head-logo {
   background: url("../images/logo.png") no-repeat 0 0;
@@ -359,6 +360,7 @@ body {
 }
 
 .base {
+  background-image: url("../images/light.png");
   background-color: #f1eee4;
   padding-bottom: 60px;
 }
@@ -382,6 +384,7 @@ body {
 .base .base-app .base-app-title {
   font-family: Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
   font-size: 31px;
+  font-weight: normal;
   color: #46403e;
 }
 .base .base-app .base-app-description {
