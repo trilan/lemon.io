@@ -330,7 +330,7 @@ body {
   margin-top: 30px;
 }
 .head .head-links {
-  font-family: Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Brawler', serif;
   background: url("../images/links.png") no-repeat 0 0;
   width: 393px;
   height: 88px;
@@ -353,10 +353,10 @@ body {
   text-decoration: none;
 }
 .head .head-links .pypi {
-  margin-left: 62px;
+  margin-left: 64px;
 }
 .head .head-links .github {
-  margin-left: 145px;
+  margin-left: 140px;
 }
 
 .base {
@@ -382,7 +382,7 @@ body {
   margin-right: 30px;
 }
 .base .base-app .base-app-title {
-  font-family: Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Brawler', serif;
   font-size: 31px;
   font-weight: normal;
   color: #46403e;
