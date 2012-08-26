@@ -1,0 +1,70 @@
+headColor = #9e4223
+
+headWidth = 563px
+braceWidth = 66px
+headContentsHeight = 399px
+
+body
+  background-color: headColor
+
+.head
+  height: 780px
+
+  .head-logo
+    background: url('../images/logo.png') no-repeat 0 0
+    height: 68px
+    width: headWidth
+    margin: 60px auto
+
+  .head-contents
+    margin: 0 auto 60px
+    height: headContentsHeight
+    width: 2*braceWidth + headWidth
+
+    .head-contents-leftbrace
+    .head-contents-code
+    .head-contents-rightbrace
+      float: left
+      display: block
+      height: headContentsHeight
+
+    .head-contents-leftbrace
+      background: url('../images/leftbrace.png') no-repeat 0 0
+      width: braceWidth
+
+    .head-contents-rightbrace
+      background: url('../images/rightbrace.png') no-repeat 0 0
+      width: braceWidth
+
+    .head-contents-code
+      width: headWidth
+      margin-top: 30px
+
+  .head-links
+    font-family: Rockwell, 'Courier New', Courier, Georgia, Times, 'Times New Roman', serif
+    background: url('../images/links.png') no-repeat 0 0
+    width: 393px
+    height: 88px
+    margin: 0 auto
+
+    .head-links-item
+      float: left
+      display: block
+      margin-top: 25px
+      font-size: 27px
+      color: white
+      border: 0 none
+      text-decoration: none
+      text-shadow: #3c3c3c 0px 2px 2px
+
+      &:hover
+      &:visited
+        color: white
+        border: 0 none
+        text-decoration: none
+
+    .pypi
+      margin-left: 62px
+
+    .github
+      margin-left: 145px

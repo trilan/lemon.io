@@ -4,9 +4,117 @@
   <head>
     <meta charset="utf-8">
     <title>Lemon</title>
-    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   </head>
 
-  <body></body>
+  <body>
+    <div class="head">
+      <div class="head-logo"></div>
+      <div class="head-contents">
+        <div class="head-contents-leftbrace"></div>
+        <pre class="head-contents-code code">
+<span class="code-k">class</span> Publication(models.Model):
+
+    author = models.ForeignKey(User, null=<span class="code-bp">True</span>, editable=<span class="code-bp">False</span>,
+        verbose_name=_(<span class="code-s">'author'</span>))
+    enabled = models.BooleanField(_(<span class="code-s">'enabled'</span>), default=<span class="code-bp">True</span>,
+        db_index=<span class="code-bp">True</span>)
+    publication_start_date = models.DateTimeField(
+        default=timezone.now, db_index=<span class="code-bp">True</span>)
+    publication_end_date = models.DateTimeField(null=<span class="code-bp">True</span>,
+        blank=<span class="code-bp">True</span>, db_index=<span class="code-bp">True</span>)
+
+    objects = PublicationManager()
+
+    <span class="code-k">class</span> Meta:
+        abstract = <span class="code-bp">True</span>
+        ordering = [<span class="code-s">'-publication_start_date'</span>]
+        </pre>
+        <div class="head-contents-rightbrace"></div>
+      </div>
+      <div class="head-links">
+        <a class="head-links-item pypi" href="#">PyPI</a>
+        <a class="head-links-item github" href="#">GitHub</a>
+      </div>
+    </div>
+    <div class="base clearfix">
+      <div class="base-head"></div>
+      <ul>
+        <li class="base-app">
+          <h1 class="base-app-title"><i class="icon icon-sitemap"></i> sitemap.xml</h1>
+          <div class="base-app-description">
+            The amount of code on the client side significantly grows in the modern web-applications. JavaScript and CSS files
+            size increases, and it becomes more difficult to navigate through them. Static files must be broken down into
+            modules. But the more static files you connect to the HTML page, the more HTTP requests must be done to load this
+            page, which increases the load time.
+          </div>
+        </li>
+        <li class="base-app">
+          <h1 class="base-app-title"><i class="icon icon-robots"></i> robots.txt</h1>
+          <div class="base-app-description">
+            The amount of code on the client side significantly grows in the modern web-applications. JavaScript and CSS files
+            size increases, and it becomes more difficult to navigate through them. Static files must be broken down into
+            modules. But the more static files you connect to the HTML page, the more HTTP requests must be done to load this
+            page, which increases the load time.
+          </div>
+        </li>
+        <li class="base-app last">
+          <h1 class="base-app-title"><i class="icon icon-pages"></i> pages</h1>
+          <div class="base-app-description">
+            The amount of code on the client side significantly grows in the modern web-applications. JavaScript and CSS files
+            size increases, and it becomes more difficult to navigate through them. Static files must be broken down into
+            modules. But the more static files you connect to the HTML page, the more HTTP requests must be done to load this
+            page, which increases the load time.
+          </div>
+        </li>
+        <li class="base-app">
+          <h1 class="base-app-title"><i class="icon icon-publications"></i> publications</h1>
+          <div class="base-app-description">
+            The amount of code on the client side significantly grows in the modern web-applications. JavaScript and CSS files
+            size increases, and it becomes more difficult to navigate through them. Static files must be broken down into
+            modules. But the more static files you connect to the HTML page, the more HTTP requests must be done to load this
+            page, which increases the load time.
+          </div>
+        </li>
+        <li class="base-app">
+          <h1 class="base-app-title"><i class="icon icon-admin"></i> admin</h1>
+          <div class="base-app-description">
+            The amount of code on the client side significantly grows in the modern web-applications. JavaScript and CSS files
+            size increases, and it becomes more difficult to navigate through them. Static files must be broken down into
+            modules. But the more static files you connect to the HTML page, the more HTTP requests must be done to load this
+            page, which increases the load time.
+          </div>
+        </li>
+        <li class="base-app last">
+          <h1 class="base-app-title"><i class="icon icon-filebrowser"></i> filebrowser</h1>
+          <div class="base-app-description">
+            The amount of code on the client side significantly grows in the modern web-applications. JavaScript and CSS files
+            size increases, and it becomes more difficult to navigate through them. Static files must be broken down into
+            modules. But the more static files you connect to the HTML page, the more HTTP requests must be done to load this
+            page, which increases the load time.
+          </div>
+        </li>
+        <li class="base-app">
+          <h1 class="base-app-title"><i class="icon icon-metatags"></i> metatags</h1>
+          <div class="base-app-description">
+            The amount of code on the client side significantly grows in the modern web-applications. JavaScript and CSS files
+            size increases, and it becomes more difficult to navigate through them. Static files must be broken down into
+            modules. But the more static files you connect to the HTML page, the more HTTP requests must be done to load this
+            page, which increases the load time.
+          </div>
+        </li>
+        <li class="base-app">
+          <h1 class="base-app-title"><i class="icon icon-dashboard"></i> dashboard</h1>
+          <div class="base-app-description">
+            The amount of code on the client side significantly grows in the modern web-applications. JavaScript and CSS files
+            size increases, and it becomes more difficult to navigate through them. Static files must be broken down into
+            modules. But the more static files you connect to the HTML page, the more HTTP requests must be done to load this
+            page, which increases the load time.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
 
 </html>
