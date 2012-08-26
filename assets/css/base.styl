@@ -1,20 +1,6 @@
 baseWidth = 840px
 appWidth = 260px
 
-.clearfix:after
-  display: block
-  clear: both
-  visibility: hidden
-  line-height: 0
-  height: 0
-
-html[xmlns] .clearfix
-  display: block
-
-* html .clearfix
-  height: 1%
-
-
 .base
   background-color: #f1eee4
   padding-bottom: 60px
@@ -24,7 +10,7 @@ html[xmlns] .clearfix
     margin-bottom: 60px
     height: 9px
 
-  ul
+  .base-apps-list
     margin: 0 auto
     padding: 0
     width: baseWidth
@@ -51,34 +37,16 @@ html[xmlns] .clearfix
   .last
     margin-right: 0
 
-  .icon
-    display: inline-block
-    width: 53px
-    height: 53px
-    vertical-align: text-top
-    background-position: 0 0
-    background-repeat: no-repeat
 
-  .icon-sitemap
-    background-image: url('../images/sitemap.png')
+.clearfix:after
+  display: block
+  clear: both
+  visibility: hidden
+  line-height: 0
+  height: 0
 
-  .icon-robots
-    background-image: url('../images/robots.png')
+html[xmlns] .clearfix
+  display: block
 
-  .icon-pages
-    background-image: url('../images/pages.png')
-
-  .icon-publications
-    background-image: url('../images/publications.png')
-
-  .icon-admin
-    background-image: url('../images/admin.png')
-
-  .icon-filebrowser
-    background-image: url('../images/filebrowser.png')
-
-  .icon-metatags
-    background-image: url('../images/metatags.png')
-
-  .icon-dashboard
-    background-image: url('../images/dashboard.png')
+* html .clearfix
+  height: 1%

@@ -358,19 +358,6 @@ body {
   margin-left: 145px;
 }
 
-.clearfix:after {
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-html[xmlns] .clearfix {
-  display: block;
-}
-* html .clearfix {
-  height: 1%;
-}
 .base {
   background-color: #f1eee4;
   padding-bottom: 60px;
@@ -380,7 +367,7 @@ html[xmlns] .clearfix {
   margin-bottom: 60px;
   height: 9px;
 }
-.base ul {
+.base .base-apps-list {
   margin: 0 auto;
   padding: 0;
   width: 840px;
@@ -407,37 +394,18 @@ html[xmlns] .clearfix {
 .base .last {
   margin-right: 0;
 }
-.base .icon {
-  display: inline-block;
-  width: 53px;
-  height: 53px;
-  vertical-align: text-top;
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.clearfix:after {
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
-.base .icon-sitemap {
-  background-image: url("../images/sitemap.png");
+html[xmlns] .clearfix {
+  display: block;
 }
-.base .icon-robots {
-  background-image: url("../images/robots.png");
-}
-.base .icon-pages {
-  background-image: url("../images/pages.png");
-}
-.base .icon-publications {
-  background-image: url("../images/publications.png");
-}
-.base .icon-admin {
-  background-image: url("../images/admin.png");
-}
-.base .icon-filebrowser {
-  background-image: url("../images/filebrowser.png");
-}
-.base .icon-metatags {
-  background-image: url("../images/metatags.png");
-}
-.base .icon-dashboard {
-  background-image: url("../images/dashboard.png");
+* html .clearfix {
+  height: 1%;
 }
 
 .code {
@@ -454,6 +422,39 @@ html[xmlns] .clearfix {
 }
 .code .code-k {
   font-weight: bold;
+}
+
+.icon {
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  vertical-align: text-top;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.icon-sitemap {
+  background-image: url("../images/sitemap.png");
+}
+.icon-robots {
+  background-image: url("../images/robots.png");
+}
+.icon-pages {
+  background-image: url("../images/pages.png");
+}
+.icon-publications {
+  background-image: url("../images/publications.png");
+}
+.icon-admin {
+  background-image: url("../images/admin.png");
+}
+.icon-filebrowser {
+  background-image: url("../images/filebrowser.png");
+}
+.icon-metatags {
+  background-image: url("../images/metatags.png");
+}
+.icon-dashboard {
+  background-image: url("../images/dashboard.png");
 }
 
 /*
