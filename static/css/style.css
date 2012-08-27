@@ -359,15 +359,15 @@ body {
   margin-left: 140px;
 }
 
+.neck {
+  background: url("../images/neck.png") repeat-x;
+  height: 6px;
+}
 .base {
   background-image: url("../images/light.png");
   background-color: #f1eee4;
   padding-bottom: 60px;
-}
-.base .base-head {
-  background: url("../images/neck.png") repeat-x;
-  margin-bottom: 60px;
-  height: 9px;
+  padding-top: 40px;
 }
 .base .base-apps-list {
   margin: 0 auto;
@@ -434,6 +434,7 @@ html[xmlns] .clearfix {
   vertical-align: text-top;
   background-position: 0 0;
   background-repeat: no-repeat;
+  margin-top: -5px;
 }
 .icon-sitemap {
   background-image: url("../images/sitemap.png");
